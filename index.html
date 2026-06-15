@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Fantasy Auto Chess Mobile</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app">
+  <header>
+    <div><h1>Auto Chess</h1><p id="status">Prepare your board</p></div>
+    <div class="pill">Round <span id="round">1</span></div>
+  </header>
+  <section class="stats">
+    <div>❤️ <span id="hp">100</span></div><div>💰 <span id="gold">8</span></div><div>⭐ Lv <span id="level">1</span></div><div>XP <span id="xp">0</span>/<span id="xpNeed">2</span></div>
+  </section>
+  <section class="synergies"><div id="synergyList"></div></section>
+  <main>
+    <div class="section-title">Board <span id="cap">0/1</span></div>
+    <div id="board" class="board"></div>
+    <div class="section-title">Bench</div>
+    <div id="bench" class="bench"></div>
+    <div class="section-title">Shop</div>
+    <div id="shop" class="shop"></div>
+  </main>
+  <nav>
+    <button id="rollBtn">Roll 2💰</button><button id="xpBtn">Buy XP 4💰</button><button id="fightBtn" class="primary">Fight</button><button id="resetBtn">Reset</button>
+  </nav>
+  <div id="modal" class="modal hidden"><div class="card"><h2 id="modalTitle"></h2><p id="modalBody"></p><button id="closeModal">OK</button></div></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
